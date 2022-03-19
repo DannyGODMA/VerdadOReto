@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <EditText
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_weight="1"
+        android:background="@color/red"
+        android:gravity="center"
+        android:textSize="20pt"
+        android:layout_marginBottom="1pt"
+        android:inputType="textPersonName"
+        android:text="Verdad o Reto"
+        android:textColor="@color/white">
+
+
+    </EditText>
+
+
+    <ListView
+        android:id="@+id/mostrar"
+        android:layout_width="match_parent"
+        android:layout_height="557dp">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/nombreJugador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre Jugador"
+        >
+
+    </EditText>
+
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_marginBottom="1pt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/agregarJugador"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:drawableLeft="@android:drawable/ic_input_add"
+                android:onClick="agregarJugador"
+                android:text="Añadir jugador"
+                android:textColor="@color/white"
+
+                ></Button>
+
+
+            <Button
+                android:id="@+id/empezar"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:drawableLeft="@android:drawable/ic_media_play"
+                android:onClick="empezarJuego"
+                android:text="Empezar"
+                android:textColor="@color/white"
+
+                ></Button>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+
+</LinearLayout>
